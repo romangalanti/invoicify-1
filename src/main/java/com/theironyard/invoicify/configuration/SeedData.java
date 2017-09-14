@@ -35,7 +35,7 @@ public class SeedData {
 		recordRepository.save(new RateBasedBillingRecord(150, 2.5, "Painting", clerk, ajax));
 		recordRepository.save(new RateBasedBillingRecord(100, 4.25, "House cleaning", clerk, ajax));
 		recordRepository.save(new RateBasedBillingRecord(700, 8, "Palm reading", admin, lomax));
-		recordRepository.save(new RateBasedBillingRecord(1.57, 25, "Show shining", clerk, lomax));
+		recordRepository.save(new RateBasedBillingRecord(1.57, 25, "Shoe shining", clerk, lomax));
 	}
 
 }
