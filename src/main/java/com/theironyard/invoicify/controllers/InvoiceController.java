@@ -56,7 +56,7 @@ public class InvoiceController {
 	public ModelAndView step2(long clientId) {
 		ModelAndView mv = new ModelAndView("invoices/step-2");
 		mv.addObject("clientId", clientId);
-		mv.addObject("records", recordRepo.findByClientId(clientId));
+		mv.addObject("records", recordRepo.findByClientIdAndLineItemIsNull(clientId));
 		return mv;
 	}
 	
