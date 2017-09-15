@@ -6,9 +6,8 @@
 <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
-
+{{> common/_navigation }}
 <h1>Select a Client</h1>
-
 <form action="/invoices/new" method="post">
 	<select name="clientId" required>
 		<option value="">Choose One</option>

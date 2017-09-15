@@ -7,5 +7,5 @@ import com.theironyard.invoicify.models.Company;
 
 @Repository
 public interface CompanyRepository extends JpaRepository<Company, Long> {
-
+	
 }

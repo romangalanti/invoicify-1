@@ -16,8 +16,10 @@ public class Company {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 
-	@Column(length=255)
+	@Column(length=255, unique=true)
 	private String name;
+	
+	private int count;
 	
 	@OneToMany(mappedBy="company")
 	private List<Invoice> invoices;
@@ -50,6 +52,14 @@ public class Company {
 
 	public void setInvoices(List<Invoice> invoices) {
 		this.invoices = invoices;
+	}
+
+	public int getCount() {
+		return count;
+	}
+
+	public void setCount(int count) {
+		count = invoices.size();
 	}
 	
 }
